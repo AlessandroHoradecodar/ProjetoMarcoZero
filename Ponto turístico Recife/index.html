@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ProjetoMarcoZero</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Estilo para o efeito de rotação */
+			.logo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.catavento {
+				width: 100px; /* Largura do catavento */
+				height: 100px; /* Altura do catavento */
+				position: relative;
+				overflow: hidden; /* Para deixar a imagem redonda */
+			}
+			.catavento img {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%; /* Torna a imagem redonda */
+				transition: transform 0.5s;
+				transform-origin: center;
+			}
+			.catavento:hover img {
+				animation: spin 2s linear; /* Animação de rotação */
+			}
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
+			.catavento::after {
+				content: "";
+				position: absolute;
+				top: 120%; /* Posição em relação ao catavento */
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #FF3300; /* Cor do fundo */
+				color: white; /* Cor do texto */
+				padding: 5px 10px; /* Espaçamento interno */
+				border-radius: 5px; /* Cantos arredondados */
+				opacity: 0; /* Inicialmente invisível */
+				transition: opacity 0.3s;
+				text-align: center;
+			}
+			.catavento:hover::after {
+				content: "Bem vindo a Recife, nós somos madeira de lei que cupim não rói!!"; /* Texto */
+				opacity: 1; /* Torna visível ao passar o mouse */
+				animation: none; /* Remove a animação quando a caixa de texto aparece */
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="logo">
+					<!-- Substitua o ícone do diamante pela imagem da sobrinha de frevo -->
+					<div class="catavento" id="sobrinha">
+						<img src="images/frevo1.webp" alt="Sobrinha de Frevo">
+					</div>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>MARCO ZERO, RECIFE/PE</h1>
+						<p>"Diante do Marco Zero, onde o passado encontra o presente e o futuro se desenha, somos todos navegantes da história, ancorados na beleza eterna deste lugar que une tempos e destinos." <a></a></p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro">História</a></li>
+						<li><a href="#work">Cenário</a></li>
+						<li><a href="#about">Localização</a></li>
+						<li><a href="#contact">Contatos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="main">
+
+				<article id="intro">
+					<h2 class="major">História</h2>
+					<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+					<p>O Marco Zero, localizado no Recife, Pernambuco, é um dos pontos turísticos mais emblemáticos da cidade e tem uma história rica e fascinante.
+
+					Este marco representa o início das medições de todas as distâncias rodoviárias no Brasil, marcando simbolicamente o centro do país em relação às estradas. A história do Marco Zero está intimamente ligada à colonização portuguesa e ao desenvolvimento da cidade do Recife.
+					
+					No início do século 16, quando os portugueses começaram a colonizar a região nordeste do Brasil, o Recife tornou-se um importante porto e centro comercial. O local onde o Marco Zero está situado hoje era uma área onde os comerciantes se reuniam para negociar produtos vindos da Europa, África e Ásia.
+					
+					No século 17, o Recife passou por um período de domínio holandês, e os holandeses também contribuíram para o desenvolvimento da cidade. Durante esse tempo, o Recife foi uma das cidades mais prósperas da América Portuguesa.
+					
+					O Marco Zero em sua forma atual foi inaugurado em 1938 como parte das celebrações do quarto centenário da chegada de Pedro Álvares Cabral ao Brasil. Ele consiste em uma rosa dos ventos de 27 metros de diâmetro, com uma bússola no centro e uma coluna com uma esfera armilar, um instrumento de navegação português, no topo. O monumento é rodeado por painéis de azulejos que retratam cenas da história de Pernambuco.
+					
+					Além de sua importância histórica, o Marco Zero é um local muito visitado pelos turistas e moradores locais, sendo o ponto de partida para passeios de barco ao longo dos rios e canais que cortam a cidade. É também um local popular para eventos culturais e festividades, tornando-o verdadeiramente um símbolo do Recife e de sua rica herança histórica e cultural.
+					
+					<a href="#work"></a></p>
+					<p></p>
+				</article>
+
+				<article id="work">
+					<h2 class="major">CENÁRIO</h2>
+					<span class="image main"><img src="images/Cenário.jpg" alt="" /></span>
+					<p>O Marco Zero também é um local muito procurado para fotógrafos e amantes da fotografia. A rosa dos ventos, a esfera armilar e os painéis de azulejos que contam a história de Pernambuco oferecem uma paisagem visualmente rica e única. Além disso, as vistas panorâmicas do Recife Antigo, com seus prédios históricos e pontes, fazem deste local um dos mais fotografados da cidade.
+
+					Em resumo, o Marco Zero não é apenas um marco histórico, mas também um centro cultural, de lazer e turismo nos dias de hoje, desempenhando um papel importante na vida da cidade e na promoção da cultura pernambucana.</p>
+					<p></p>
+				</article>
+
+				<article id="about">
+					<h2 class="major">Localização</h2>
+					<span class="image main"><img src="images/Localizacao.jpg" alt="" /></span>
+					<p> O Marco Zero está localizado às margens do Rio Capibaribe e do Rio Beberibe, o que o torna um ponto de partida para passeios de barco e catamarã pelos rios e canais da cidade. Esses passeios proporcionam aos visitantes uma perspectiva única da cidade, passando por belos pontos turísticos, como o bairro de Santo Antônio, conhecido por suas casas coloridas e arquitetura histórica.</p>
+				</article>
+
+				<article id="contact">
+					<h2 class="major">Contato</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Nome</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Mensagem</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Envie sua mensagem" class="primary" /></li>
+							<li><input type="reset" value="Reiniciar" /></li>
+						</ul>
+					</form>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">&copy; Design: <a>Alessandro Barbosa</a>.</p>
+			</footer>
+
+		</div>
+
+		<div id="bg"></div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
